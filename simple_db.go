@@ -12,10 +12,7 @@ type DB struct {
 }
 
 func Create() (*DB) {
-	db := &DB{
-		data : make(map[string]string),
-	}
-	return db
+	return &DB{data : make(map[string]string)}
 }
 
 type Tx struct {
